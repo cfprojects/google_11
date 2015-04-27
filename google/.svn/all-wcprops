@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 21
+/cfgoogle/!svn/ver/0/
+END
+analytics.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/cfgoogle/!svn/ver/1/analytics.cfc
+END
+docs.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/cfgoogle/!svn/ver/1/docs.cfc
+END
+test2public.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/cfgoogle/!svn/ver/1/test2public.cfm
+END
+google.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/cfgoogle/!svn/ver/1/google.cfc
+END
+analyticsTestPublic.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cfgoogle/!svn/ver/3/analyticsTestPublic.cfm
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/cfgoogle/!svn/ver/1/readme.txt
+END
