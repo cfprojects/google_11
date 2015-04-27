@@ -1,0 +1,1301 @@
+
+<!-- saved from url=(0134)http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Component analytics</TITLE>
+<STYLE>
+body  {
+	font-family: verdana, arial, helvetica, sans-serif;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+table	{
+	font-size: 11px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	width: 90%;
+}
+
+th {
+	padding: 6px;
+	font-size: 12px;
+	background-color: #cccccc;
+}
+
+td {
+	padding: 6px;
+	background-color: #eeeeee;
+	vertical-align : top;
+}
+
+code {
+	color: #000099 ;
+}
+</STYLE>
+
+</HEAD><BODY style="padding-bottom : 800px;">
+
+
+
+
+
+
+
+<FONT size="-2">test.google.analytics</FONT><BR>
+<FONT size="+1"><B>Component analytics
+(google analytics API)
+</B></FONT>
+
+
+
+
+
+<BR><BR><BR>
+<BR><TABLE>
+
+
+<TBODY><TR><TD>hierarchy:</TD><TD>
+	
+	
+		<A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=WEB-INF.cftags.component">WEB-INF.cftags.component</A><BR>
+		
+	
+	
+	
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.google">test.google.google</A><BR>
+		
+	
+	
+	
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test.google.analytics<BR>
+		
+	
+	
+
+
+</TD></TR>
+
+
+<TR><TD>path:</TD>
+	<TD>C:\inetpub\wwwroot8\test\google\analytics.cfc</TD>
+</TR>
+
+
+
+ 
+
+
+
+
+
+<TR><TD>properties:</TD>
+	
+	
+	
+	<TD>
+</TR>
+
+<TR><TD>methods:</TD>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<TD> <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_authenticate">authenticate</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_cleanOperators">cleanOperators</A>*, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_getAccountData">getAccountData</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_getAnalyticsData">getAnalyticsData</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_getBrowserSummary">getBrowserSummary</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_getContentOverview">getContentOverview</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_getGeographicOverview">getGeographicOverview</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_getKeywordOverview">getKeywordOverview</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_getReferrerSummary">getReferrerSummary</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.analytics&path=/test/google/analytics.cfc#method_getTrafficSourceOverview">getTrafficSourceOverview</A></TD>
+</TR>
+
+
+
+
+
+</TBODY></TABLE>
+<FONT size="-2">* - private method</FONT>
+
+
+
+
+
+
+
+
+
+
+
+<BR><BR><TABLE>
+
+
+	
+	
+	
+	
+	
+	<TBODY><TR><TH align="left" colspan="1">
+		<A name="method_authenticate">authenticate</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>void</I>
+	
+	<B>authenticate</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		string
+		</I>
+		username,
+	
+		
+		<I>
+		required
+		string
+		</I>
+		password
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	I authenticate a user for a service. If login fails, I throw an error.<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>username:</B>
+			string,
+			required,
+			username
+			
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>password:</B>
+			string,
+			required,
+			password
+			
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_cleanOperators">cleanOperators</A>*
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>private</I>
+	
+	
+		<I>string</I>
+	
+	<B>cleanOperators</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		
+		</I>
+		filter
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i url encode the filter operators<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>filter:</B>
+			any,
+			required,
+			filter
+			
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getAccountData">getAccountData</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>any</I>
+	
+	<B>getAccountData</B>
+	
+	(
+ 		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i get analytics account data<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getAnalyticsData">getAnalyticsData</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>struct</I>
+	
+	<B>getAnalyticsData</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		
+		</I>
+		id,
+	
+		
+		<I>
+		
+		
+		</I>
+		dimensions="ga:browser,ga:country,ga:city,ga:countOfVisits,ga:date,ga:visitorType",
+	
+		
+		<I>
+		
+		
+		</I>
+		metrics="ga:pageviews,ga:timeOnPage,ga:uniquePageViews",
+	
+		
+		<I>
+		
+		
+		</I>
+		filters="",
+	
+		
+		<I>
+		
+		
+		</I>
+		startDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		endDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		sort="",
+	
+		
+		<I>
+		
+		
+		</I>
+		maxResults="1000",
+	
+		
+		<I>
+		
+		
+		</I>
+		startIndex="1"
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i get analytics data<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>id:</B>
+			any,
+			required,
+			id
+			- the tableID of the site you would like to retrieve data from (see getAccountData() method)  ex: ga1234
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>dimensions:</B>
+			any,
+			optional,
+			dimensions
+			- the analytic dimensions to grab (max 7 per query)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>metrics:</B>
+			any,
+			optional,
+			metrics
+			- the analytic metrics to grab (max 10 per query)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>filters:</B>
+			any,
+			optional,
+			filters
+			- filter used to limit results
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startDate:</B>
+			any,
+			optional,
+			startDate
+			- the first date from which to collect data from the profile (default is 30 days prior to now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>endDate:</B>
+			any,
+			optional,
+			endDate
+			- the last date from which to collect data from the profile (default is now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>sort:</B>
+			any,
+			optional,
+			sort
+			- data fields to sort the given results by
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>maxResults:</B>
+			any,
+			optional,
+			maxResults
+			- max number of entries to fetch (defaults and not to exceed 1000)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startIndex:</B>
+			any,
+			optional,
+			startIndex
+			- start index for results (used for pagination - default is 1)
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getBrowserSummary">getBrowserSummary</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>struct</I>
+	
+	<B>getBrowserSummary</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		
+		</I>
+		id,
+	
+		
+		<I>
+		
+		
+		</I>
+		startDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		endDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		maxResults="1000",
+	
+		
+		<I>
+		
+		
+		</I>
+		pagePath="",
+	
+		
+		<I>
+		
+		
+		</I>
+		startIndex="1"
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i get summary of the page views by browser for the given site or page.  i will return page path, browser and view count<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>id:</B>
+			any,
+			required,
+			id
+			- the tableID of the site you would like to retrieve data from (see getAccountData() method)  ex: ga1234
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startDate:</B>
+			any,
+			optional,
+			startDate
+			- the first date from which to collect data from the profile (default is 30 days prior to now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>endDate:</B>
+			any,
+			optional,
+			endDate
+			- the last date from which to collect data from the profile (default is now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>maxResults:</B>
+			any,
+			optional,
+			maxResults
+			- max number of entries to fetch (defaults and not to exceed 1000)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>pagePath:</B>
+			any,
+			optional,
+			pagePath
+			- to filter on a particular page path pass it in
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startIndex:</B>
+			any,
+			optional,
+			startIndex
+			- start index for results (used for pagination - default is 1)
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getContentOverview">getContentOverview</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>struct</I>
+	
+	<B>getContentOverview</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		
+		</I>
+		id,
+	
+		
+		<I>
+		
+		
+		</I>
+		startDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		endDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		maxResults="1000",
+	
+		
+		<I>
+		
+		
+		</I>
+		startIndex="1"
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i get a content overview for the given site.  i will return page path and view count<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>id:</B>
+			any,
+			required,
+			id
+			- the tableID of the site you would like to retrieve data from (see getAccountData() method)  ex: ga1234
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startDate:</B>
+			any,
+			optional,
+			startDate
+			- the first date from which to collect data from the profile (default is 30 days prior to now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>endDate:</B>
+			any,
+			optional,
+			endDate
+			- the last date from which to collect data from the profile (default is now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>maxResults:</B>
+			any,
+			optional,
+			maxResults
+			- max number of entries to fetch (defaults and not to exceed 1000)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startIndex:</B>
+			any,
+			optional,
+			startIndex
+			- start index for results (used for pagination - default is 1)
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getGeographicOverview">getGeographicOverview</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>struct</I>
+	
+	<B>getGeographicOverview</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		
+		</I>
+		id,
+	
+		
+		<I>
+		
+		
+		</I>
+		geographicalGrouping="continent",
+	
+		
+		<I>
+		
+		
+		</I>
+		startDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		endDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		maxResults="1000",
+	
+		
+		<I>
+		
+		
+		</I>
+		startIndex="1"
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i get a geographic overview for the given site.  i will return []<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>id:</B>
+			any,
+			required,
+			id
+			- the tableID of the site you would like to retrieve data from (see getAccountData() method)  ex: ga1234
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>geographicalGrouping:</B>
+			any,
+			optional,
+			geographicalGrouping
+			- level at which to pull geo overview.  must be one of continent,subContinent,country,region,city.  default: continent
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startDate:</B>
+			any,
+			optional,
+			startDate
+			- the first date from which to collect data from the profile (default is 30 days prior to now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>endDate:</B>
+			any,
+			optional,
+			endDate
+			- the last date from which to collect data from the profile (default is now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>maxResults:</B>
+			any,
+			optional,
+			maxResults
+			- max number of entries to fetch (defaults and not to exceed 1000)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startIndex:</B>
+			any,
+			optional,
+			startIndex
+			- start index for results (used for pagination - default is 1)
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getKeywordOverview">getKeywordOverview</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>struct</I>
+	
+	<B>getKeywordOverview</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		
+		</I>
+		id,
+	
+		
+		<I>
+		
+		
+		</I>
+		startDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		endDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		maxResults="1000",
+	
+		
+		<I>
+		
+		
+		</I>
+		startIndex="1"
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i get a keyword overview for the given site.  i will return keyword and visit count that used that keyword to reach your site<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>id:</B>
+			any,
+			required,
+			id
+			- the tableID of the site you would like to retrieve data from (see getAccountData() method)  ex: ga1234
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startDate:</B>
+			any,
+			optional,
+			startDate
+			- the first date from which to collect data from the profile (default is 30 days prior to now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>endDate:</B>
+			any,
+			optional,
+			endDate
+			- the last date from which to collect data from the profile (default is now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>maxResults:</B>
+			any,
+			optional,
+			maxResults
+			- max number of entries to fetch (defaults and not to exceed 1000)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startIndex:</B>
+			any,
+			optional,
+			startIndex
+			- start index for results (used for pagination - default is 1)
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getReferrerSummary">getReferrerSummary</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>struct</I>
+	
+	<B>getReferrerSummary</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		
+		</I>
+		id,
+	
+		
+		<I>
+		
+		
+		</I>
+		startDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		endDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		maxResults="1000",
+	
+		
+		<I>
+		
+		
+		</I>
+		pagePath="",
+	
+		
+		<I>
+		
+		
+		</I>
+		startIndex="1"
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i get summary of the page views by referrer for the given site or page.  i will return page path, source (domain), keyword and view count<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>id:</B>
+			any,
+			required,
+			id
+			- the tableID of the site you would like to retrieve data from (see getAccountData() method)  ex: ga1234
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startDate:</B>
+			any,
+			optional,
+			startDate
+			- the first date from which to collect data from the profile (default is 30 days prior to now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>endDate:</B>
+			any,
+			optional,
+			endDate
+			- the last date from which to collect data from the profile (default is now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>maxResults:</B>
+			any,
+			optional,
+			maxResults
+			- max number of entries to fetch (defaults and not to exceed 1000)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>pagePath:</B>
+			any,
+			optional,
+			pagePath
+			- to filter on a particular page path pass it in
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startIndex:</B>
+			any,
+			optional,
+			startIndex
+			- start index for results (used for pagination - default is 1)
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getTrafficSourceOverview">getTrafficSourceOverview</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>struct</I>
+	
+	<B>getTrafficSourceOverview</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		
+		</I>
+		id,
+	
+		
+		<I>
+		
+		
+		</I>
+		startDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		endDate="[runtime expression]",
+	
+		
+		<I>
+		
+		
+		</I>
+		maxResults="1000",
+	
+		
+		<I>
+		
+		
+		</I>
+		startIndex="1"
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	i get a traffic source overview for the given site.  i will return referring source domain and visit count<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>id:</B>
+			any,
+			required,
+			id
+			- the tableID of the site you would like to retrieve data from (see getAccountData() method)  ex: ga1234
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startDate:</B>
+			any,
+			optional,
+			startDate
+			- the first date from which to collect data from the profile (default is 30 days prior to now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>endDate:</B>
+			any,
+			optional,
+			endDate
+			- the last date from which to collect data from the profile (default is now())
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>maxResults:</B>
+			any,
+			optional,
+			maxResults
+			- max number of entries to fetch (defaults and not to exceed 1000)
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>startIndex:</B>
+			any,
+			optional,
+			startIndex
+			- start index for results (used for pagination - default is 1)
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+	
+
+</TBODY></TABLE>
+
+
+
+
+
+
+		
+
+		
+		
+	</BODY></HTML>

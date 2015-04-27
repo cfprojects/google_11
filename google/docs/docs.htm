@@ -1,0 +1,516 @@
+
+<!-- saved from url=(0124)http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.docs&path=/test/google/docs.cfc -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Component docs</TITLE>
+<STYLE>
+body  {
+	font-family: verdana, arial, helvetica, sans-serif;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+table	{
+	font-size: 11px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	width: 90%;
+}
+
+th {
+	padding: 6px;
+	font-size: 12px;
+	background-color: #cccccc;
+}
+
+td {
+	padding: 6px;
+	background-color: #eeeeee;
+	vertical-align : top;
+}
+
+code {
+	color: #000099 ;
+}
+</STYLE>
+
+</HEAD><BODY style="padding-bottom : 800px;">
+
+
+
+
+
+
+
+<FONT size="-2">test.google.docs</FONT><BR>
+<FONT size="+1"><B>Component docs
+
+</B></FONT>
+
+
+
+
+
+<BR><BR><BR>
+<BR><TABLE>
+
+
+<TBODY><TR><TD>hierarchy:</TD><TD>
+	
+	
+		<A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=WEB-INF.cftags.component">WEB-INF.cftags.component</A><BR>
+		
+	
+	
+	
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.google">test.google.google</A><BR>
+		
+	
+	
+	
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test.google.docs<BR>
+		
+	
+	
+
+
+</TD></TR>
+
+
+<TR><TD>path:</TD>
+	<TD>C:\inetpub\wwwroot8\test\google\docs.cfc</TD>
+</TR>
+
+
+
+ 
+
+
+
+
+
+<TR><TD>properties:</TD>
+	
+	
+	
+	<TD>
+</TR>
+
+<TR><TD>methods:</TD>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	<TD> <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.docs&path=/test/google/docs.cfc#method_authenticate">authenticate</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.docs&path=/test/google/docs.cfc#method_download">download</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.docs&path=/test/google/docs.cfc#method_getDocumentList">getDocumentList</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=test.google.docs&path=/test/google/docs.cfc#method_spreadSheetFormat">spreadSheetFormat</A>*</TD>
+</TR>
+
+
+
+
+
+</TBODY></TABLE>
+<FONT size="-2">* - private method</FONT>
+
+
+
+
+
+
+
+
+
+
+
+<BR><BR><TABLE>
+
+
+	
+	
+	
+	
+	
+	<TBODY><TR><TH align="left" colspan="1">
+		<A name="method_authenticate">authenticate</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>boolean</I>
+	
+	<B>authenticate</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		string
+		</I>
+		username,
+	
+		
+		<I>
+		required
+		string
+		</I>
+		password
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	I authenticate a user for a service. If login fails, I throw an error.<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>username:</B>
+			string,
+			required,
+			username
+			
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>password:</B>
+			string,
+			required,
+			password
+			
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_download">download</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>any</I>
+	
+	<B>download</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		string
+		</I>
+		id,
+	
+		
+		<I>
+		
+		string
+		</I>
+		type="document",
+	
+		
+		<I>
+		
+		string
+		</I>
+		format="txt",
+	
+		
+		<I>
+		
+		numeric
+		</I>
+		sheet
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	I get the source of the document.<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>id:</B>
+			string,
+			required,
+			id
+			- Document ID.
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>type:</B>
+			string,
+			optional,
+			type
+			- document,spreadsheet,presentation. Needed since Google isn't smart enough to look it up.
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>format:</B>
+			string,
+			optional,
+			format
+			- Please see docs above for valid formats. It is based on type.
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>sheet:</B>
+			numeric,
+			optional,
+			sheet
+			- What sheet to get. Google uses 0 based indexes, but that's dumb. I'll substract one for you.
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getDocumentList">getDocumentList</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>query</I>
+	
+	<B>getDocumentList</B>
+	
+	(
+ 	
+		
+		<I>
+		
+		string
+		</I>
+		title,
+	
+		
+		<I>
+		
+		numeric
+		</I>
+		max,
+	
+		
+		<I>
+		
+		string
+		</I>
+		doctype,
+	
+		
+		<I>
+		
+		boolean
+		</I>
+		starred,
+	
+		
+		<I>
+		
+		string
+		</I>
+		search
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	I return a query of documents. ToDo: More Filtering.<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>title:</B>
+			string,
+			optional,
+			title
+			
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>max:</B>
+			numeric,
+			optional,
+			max
+			
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>doctype:</B>
+			string,
+			optional,
+			doctype
+			- Filter by type. One of document,presentation,spreadsheet
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>starred:</B>
+			boolean,
+			optional,
+			starred
+			- Filter by starred. Ignored if false.
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>search:</B>
+			string,
+			optional,
+			search
+			- Filter by search term.
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_spreadSheetFormat">spreadSheetFormat</A>*
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>private</I>
+	
+	
+		<I>numeric</I>
+	
+	<B>spreadSheetFormat</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		string
+		</I>
+		format
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	Google requires numbers for Excel formats. This lets you provide a simple format.<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>format:</B>
+			string,
+			required,
+			format
+			
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+	
+
+</TBODY></TABLE>
+
+
+
+
+
+
+		
+
+		
+		
+	</BODY></HTML>

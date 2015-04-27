@@ -1,0 +1,293 @@
+
+<!-- saved from url=(0128)http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?METHOD=getcfcinhtml&NAME=test.google.google&PATH=/test/google/google.cfc -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Component google</TITLE>
+<STYLE>
+body  {
+	font-family: verdana, arial, helvetica, sans-serif;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+table	{
+	font-size: 11px;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	width: 90%;
+}
+
+th {
+	padding: 6px;
+	font-size: 12px;
+	background-color: #cccccc;
+}
+
+td {
+	padding: 6px;
+	background-color: #eeeeee;
+	vertical-align : top;
+}
+
+code {
+	color: #000099 ;
+}
+</STYLE>
+
+</HEAD><BODY style="padding-bottom : 800px;">
+
+
+
+
+
+
+
+<FONT size="-2">test.google.google</FONT><BR>
+<FONT size="+1"><B>Component google
+
+</B></FONT>
+
+
+
+
+
+<BR><BR><BR>
+<BR><TABLE>
+
+
+<TBODY><TR><TD>hierarchy:</TD><TD>
+	
+	
+		<A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?method=getcfcinhtml&name=WEB-INF.cftags.component">WEB-INF.cftags.component</A><BR>
+		
+	
+	
+	
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test.google.google<BR>
+		
+	
+	
+
+
+</TD></TR>
+
+
+<TR><TD>path:</TD>
+	<TD>C:\inetpub\wwwroot8\test\google\google.cfc</TD>
+</TR>
+
+
+
+ 
+
+
+
+
+
+<TR><TD>properties:</TD>
+	
+	
+	
+	<TD>
+</TR>
+
+<TR><TD>methods:</TD>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	<TD> <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?METHOD=getcfcinhtml&NAME=test.google.google&PATH=/test/google/google.cfc#method_authenticate">authenticate</A>, <A href="http://coldfusion8/CFIDE/componentutils/cfcexplorer.cfc?METHOD=getcfcinhtml&NAME=test.google.google&PATH=/test/google/google.cfc#method_getAuth">getAuth</A>*</TD>
+</TR>
+
+
+
+
+
+</TBODY></TABLE>
+<FONT size="-2">* - private method</FONT>
+
+
+
+
+
+
+
+
+
+
+
+<BR><BR><TABLE>
+
+
+	
+	
+	
+	
+	
+	<TBODY><TR><TH align="left" colspan="1">
+		<A name="method_authenticate">authenticate</A>
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>public</I>
+	
+	
+		<I>void</I>
+	
+	<B>authenticate</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		string
+		</I>
+		username,
+	
+		
+		<I>
+		required
+		string
+		</I>
+		password,
+	
+		
+		<I>
+		required
+		string
+		</I>
+		service
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	I authenticate a user for a service. If login fails, I throw an error.<BR><BR>
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>username:</B>
+			string,
+			required,
+			username
+			
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>password:</B>
+			string,
+			required,
+			password
+			
+			<BR>
+		
+			
+			&nbsp;&nbsp; <B>service:</B>
+			string,
+			required,
+			service
+			
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+
+	
+	
+	
+	
+	
+	<TR><TH align="left" colspan="1">
+		<A name="method_getAuth">getAuth</A>*
+		
+		</TH></TR>
+	<TR><TD>
+	
+	
+	
+	<CODE>
+	
+		<I>private</I>
+	
+	
+		<I>string</I>
+	
+	<B>getAuth</B>
+	
+	(
+ 	
+		
+		<I>
+		required
+		string
+		</I>
+		service
+		
+	)
+	
+	</CODE>
+	<BR><BR>	
+	
+	
+	
+	
+	Output: suppressed<BR>
+	
+	
+	
+		Parameters:<BR>
+		
+			
+			&nbsp;&nbsp; <B>service:</B>
+			string,
+			required,
+			service
+			
+			<BR>
+		
+	
+	
+	<BR>
+	</TD></TR>
+
+	
+
+</TBODY></TABLE>
+
+
+
+
+
+
+		
+
+		
+		
+	</BODY></HTML>
